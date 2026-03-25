@@ -11,7 +11,7 @@ export interface Dimensions {
 export interface INote {
   id: string
   title: string
-  color: string
+  colour: string
   position: Position
   dimensions: Dimensions
   clusterId?: string

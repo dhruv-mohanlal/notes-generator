@@ -2,7 +2,7 @@ import mongoose, { Schema, type Document } from 'mongoose'
 
 export interface NoteDocument extends Document {
   title: string
-  color: string
+  colour: string
   position: { x: number; y: number }
   dimensions: { width: number; height: number }
   clusterId?: string
@@ -18,7 +18,7 @@ export interface NoteDocument extends Document {
 const noteSchema = new Schema<NoteDocument>(
   {
     title: { type: String, required: true, default: 'Untitled' },
-    color: { type: String, default: '#FEF08A' },
+    colour: { type: String, default: '#FEF08A' },
     position: {
       x: { type: Number, default: 0 },
       y: { type: Number, default: 0 }
